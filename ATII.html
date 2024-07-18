@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u>
+  <h1>PERCENTAGE CALCULATOR</h1>  
+</u>
+<form >
+<label for="tm">totel marks:</label>
+<input type="number" name="tm" placeholder="enter your tm" id="tm1" required>
+<label for="obt">obt marks</label>
+<input type="number" name="obt" placeholder="enter your obt" id="obt1" required>
+<button type="submit" onclick="percentagecalculator()">submit</button>
+</form>
+
+<script>
+function percentagecalculator(){
+    let stdtmmarks=document.getElementById("tm1").value;
+    let stdobtmarks=document.getElementById("obt1").value;
+    let res=(stdobtmarks/stdtmmarks)*100
+    document.write("you have got it"+res+"%")
+    alert("you have got it"+res+"%")
+    console.log("you have got it"+res+"%")
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
